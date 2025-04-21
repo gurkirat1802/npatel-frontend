@@ -1,0 +1,233 @@
+/* About Page Container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #12121f;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  /* Main Content */
+  .about-main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 3rem 0 2rem;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  /* Who We Are Section */
+  .who-we-are-section {
+    margin-bottom: 5rem;
+  }
+  
+  .about-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: rgba(38, 38, 58, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-image-card {
+    padding: 0;
+    aspect-ratio: 4/3;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .about-text-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .about-text-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+  }
+  
+  /* Features Section */
+  .features-section {
+    margin-bottom: 5rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-card {
+    background-color: rgba(38, 38, 58, 0.4);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 24px;
+    height: 24px;
+    color: #12121f;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  /* Background Gradient */
+  .about-container {
+    background: linear-gradient(135deg, #12121f 0%, #1a1a2e 100%);
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    .about-cards-grid,
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .about-text-card p,
+    .feature-description {
+      font-size: 1rem;
+    }
+    
+    .feature-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* For medium screens */
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .about-cards-grid,
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* For large screens */
+  @media screen and (min-width: 1024px) {
+    .about-cards-grid,
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Card Hover Effects */
+  .about-card:hover,
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Transition effects */
+  .about-card,
+  .feature-card,
+  .feature-icon-container {
+    transition: all 0.3s ease;
+  }
+  
+  /* Custom styling to match the image you provided */
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .feature-icon-container {
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-title {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Add a subtle gradient background to the page */
+  .about-container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), rgba(0, 0, 0, 0) 70%),
+      radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.1), rgba(0, 0, 0, 0) 70%);
+    z-index: -1;
+    pointer-events: none;
+  }

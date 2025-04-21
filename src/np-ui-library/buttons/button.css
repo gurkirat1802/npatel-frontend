@@ -1,0 +1,36 @@
+.btnContainer .button {
+    background: linear-gradient(135deg, #6078ea, #17ead9);
+    color: white;
+    font-size: 12px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(23, 234, 217, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(23, 234, 217, 0.3);
+}
+
+.btnContainer .button.hidden {
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: none;
+}
+
+.btnContainer .button.hidden:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btnContainer span{
+    margin: 0;
+}
